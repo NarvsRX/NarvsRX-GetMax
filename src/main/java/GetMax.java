@@ -7,6 +7,14 @@ public class GetMax {
      * @return the largest value in arr.
      */
     public int max(int[] arr){
-        return -1;
+        int max = arr[0];
+        
+        for(int nums : arr){
+            int y = nums;
+            if (y >= max){
+                max = y;
+            }
+        }
+        return max;
     }
 }
